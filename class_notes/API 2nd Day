@@ -1,0 +1,15 @@
+Insurance Web Service:
+GetQoute - Request Json where you will pass driver and vehicle details
+		- Response List of coverage with a quote number and version number
+Coverage - Request, it needs that quote number, and version number
+		- Response json with different coverages
+Discount - Request with quote number and version number
+		- Response json with all the discount you have
+IAgree - Request with version number
+		- Response will show you all are the terms, return I agree id
+SelectPayment - Request will have I Agree id
+		- Response will have payments options with id
+PostPayment - Request will have payment id and I agree id
+		- Response payment confirmation id
+POI - Request with quote number
+	- response it will return a document of insurance

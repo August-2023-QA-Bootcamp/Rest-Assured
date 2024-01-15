@@ -1,0 +1,86 @@
+Application
+- Fron-End / UI, UX
+- Backend
+	- Business Layer (Expose Web Services to Fron-End)
+		- Rules (Sellers, Buyers, Guest User, Admin)
+		- Security
+		- Web Services
+	- DB
+
+HTTP Request
+Endpoints - https://cas.avalon.perfdrive.com/jsdata?
+			https://cas.avalon.perfdrive.com/evaluation
+HTTP Request Method - GET, PUT, POST, DELETE, PATCH
+URL - Unified Resource Locator = Base URI + Resource
+Web Services - Multiple Endpoint
+- RestFUL - XML / JSON - JavaScript Object Notation
+- Soap - XML
+
+Micro Services - Cluster / Collection of Web Services
+
+Netflix Application : Micro Services Architech
+- Session Web Services / API / Rest API
+	- Create Session
+	- Register Devices
+	- Get Devices
+	- Get Account Details
+- Browse Web Services / API
+	- Search by text
+	- Filter
+	- Video On Demand
+	- Recommendation
+- Playback API
+	- Check rights
+	- Start Playback
+	- Pause Playback
+	- Resume Playback
+	- Remaining time
+- Metadata API
+	- Ratings
+	- Description
+	- Cast
+	- Similar Item
+
+String str = "";
+int i = 1;
+
+var e = "";
+var b = 2;
+const c = "";
+let d = 3;
+
+var obj = {"name" : "john", 
+			"age" : 30,
+			"DOB": "12-12-1966"}
+
+
+HTTP Method - GET, PUT, POST, DELETE
+Ops		SQL 			API
+------|---------|-------------
+Read   - SELECT - GET
+Create - INSERT - POST
+Update - UPDATE - PUT / PATCH
+Delete - DELETE - DELETE
+
+CURD - Ops / Operation
+
+HTTP Request:
+Request - HTTP Method, URL, Parameters / Params (Path, Query), Request Headers (Autorization), Request Body (POST/PUT)
+Response - Status Code (200 - Success, 300 - Redirection, 400 - Request / Client Error, 500 - Response / Server Side), Response Body, Response Headers, 
+
+
+Tools : 
+Manual - Postman, SoapUI, Ready API
+Automation - RestAssured, Karate Framework
+Swagger - Web Service Test Editor
+
+Some Fake API :
+- https://github.com/typicode/json-server
+- https://reqres.in/
+- https://jsonplaceholder.typicode.com/
+- https://dummyjson.com/
+- https://restcountries.com/v3.1/all
+
+
+Resources - 
+https://aws.amazon.com/compare/the-difference-between-soap-rest/
