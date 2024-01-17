@@ -113,9 +113,10 @@ public class GetAPITests {
 		
 		Product[] products = response.as(Product[].class);
 		System.out.println(products[0].getRating().getRate());
+		System.err.println(products[products.length - 1].getDescription());
 	}
 	
-	@Test
+	//@Test
 	public void getTestChainingMultipleApis() {
 		String baseUrl = "https://fakestoreapi.com";
 		String endpoint = "/products"; // Another /products/1 - Path Param
@@ -151,5 +152,24 @@ public class GetAPITests {
 		Assertions.assertEquals(8, product.getId());
 		
 		System.out.println(product.getId() + "\n" + product.getTitle());
+	}
+	
+	@Test
+	public void getTestNegativeTest() {
+		String baseUrl = "http://localhost:3000";
+		String endpoint = "/employees";
+
+		//Request Obj
+		RequestSpecification request = RestAssured.given();
+		request.baseUri(baseUrl);
+		request.basePath(endpoint);
+		//request.auth().basic("user1", "pwd1");
+		request.log().all();
+		
+		//Response Obj
+		Response response = request.get();
+		response.then().log().all();
+		
+		response.then().statusCode(401);
 	}
 }

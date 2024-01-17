@@ -1,0 +1,13 @@
+Resources:
+ - https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods
+ - https://petstore.swagger.io/#/
+ 
+Test:
+POST Employees API
+- Validate the id is incremant of last id generated
+1. grab the last id that has been generated
+ - Make a API call to GET employees > grab the last id > save it
+2. make the post call and grab the id
+ - Make POST API call and grab the id 
+3. are the equal?
+ - match both ids
