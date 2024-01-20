@@ -1,5 +1,8 @@
 {
-    "firstName": "Harshall",
-    "lastName": "Gibbs",
-    "dob": "1990-10-22"
+        "id": 7,
+        "firstName": "Harshall",
+        "lastName": "Gibbs",
+        "dob": "1990-10-22",
+        "fullName": "Harshall Gibbs",
+        "age": "33 Years 2 Months 28 Days"
 }

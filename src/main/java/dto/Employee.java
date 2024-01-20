@@ -2,6 +2,9 @@ package dto;
 
 import java.util.Date;
 
+/**
+ * This is POGO class for Employee object
+ */
 public class Employee {
 
 	int id;
@@ -63,10 +66,19 @@ public class Employee {
 		this.fullName = fullName;
 	}
 
+	/**
+	 * getAge() will calculate age from DOB
+	 * @return String age.
+	 * e.g 39 years 2 months 12 days
+	 */
 	public String getAge() {
 		return age;
 	}
 
+	/**
+	 * 
+	 * @param age
+	 */
 	public void setAge(String age) {
 		this.age = age;
 	}
