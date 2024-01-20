@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.hamcrest.Matchers;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -112,7 +113,9 @@ public class PostAPITests {
 		Response response = request.post();
 		response.then().log().all();
 		
+		//Validations
 		response.then().statusCode(201);
+		response.then().body("lastName", Matchers.equalTo(map.get("lastName")));
 		
 		Employee employee = response.as(Employee.class);
 		System.out.println(employee.getAge());
