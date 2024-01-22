@@ -1,14 +1,12 @@
 package base;
 
-import io.restassured.response.Response;
-
 public interface IAPIRequest {
 
-	Response getAPICall();
+	void getAPICall();
 	
-	Response postAPICall();
+	void postAPICall();
 	
-	Response putAPICall();
+	void putAPICall();
 	
-	Response deleteAPICall();
+	void deleteAPICall();
 }
