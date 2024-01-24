@@ -9,6 +9,8 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.DynamicNode;
+import org.junit.jupiter.api.Tag;
+
 import static org.junit.jupiter.api.DynamicTest.*;
 import org.junit.jupiter.api.TestFactory;
 
@@ -16,6 +18,7 @@ import dto.Employee;
 import endpoint.DeleteEmployee;
 import endpoint.GetEmployees;
 
+@Tag("REGRESSION")
 public class DeleteEmployeeTest {
 
 	static DeleteEmployee deleteEmployee;

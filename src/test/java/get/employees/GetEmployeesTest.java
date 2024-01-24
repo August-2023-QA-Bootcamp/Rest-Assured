@@ -1,6 +1,7 @@
 package get.employees;
 
 import java.util.ArrayList;
+
 import java.util.List;
 
 import static org.hamcrest.Matchers.*;
@@ -13,6 +14,7 @@ import static org.junit.jupiter.api.DynamicContainer.dynamicContainer;
 import org.junit.jupiter.api.DynamicNode;
 import org.junit.jupiter.api.MethodOrderer.OrderAnnotation;
 import org.junit.jupiter.api.Order;
+import org.junit.jupiter.api.Tag;
 
 import static org.junit.jupiter.api.DynamicTest.dynamicTest;
 import org.junit.jupiter.api.TestFactory;
@@ -21,6 +23,7 @@ import org.junit.jupiter.api.TestMethodOrder;
 import dto.Employee;
 import endpoint.GetEmployees;
 
+@Tag("REGRESSION")
 @TestMethodOrder(OrderAnnotation.class)
 public class GetEmployeesTest {
 
@@ -32,6 +35,7 @@ public class GetEmployeesTest {
 	}
 	
 	@TestFactory
+	@Tag("SMOKE")
 	@Order(2)
 	@DisplayName("TC_122 : GetEmplyees - Happy Path")
 	public List<DynamicNode> getEmployeesHappyPath() {

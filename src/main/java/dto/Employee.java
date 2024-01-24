@@ -1,7 +1,5 @@
 package dto;
 
-import java.util.Date;
-
 /**
  * This is POGO class for Employee object
  */
@@ -10,13 +8,13 @@ public class Employee {
 	int id;
 	String firstName;
 	String lastName;
-	Date dob;
+	String dob;
 	String fullName;
 	String age;
 	
 	public Employee() {}
 	
-	public Employee(int id, String firstName, String lastName, Date dob, String fullName, String age) {
+	public Employee(int id, String firstName, String lastName, String dob, String fullName, String age) {
 		super();
 		this.id = id;
 		this.firstName = firstName;
@@ -50,11 +48,11 @@ public class Employee {
 		this.lastName = lastName;
 	}
 
-	public Date getDob() {
+	public String getDob() {
 		return dob;
 	}
 
-	public void setDob(Date dob) {
+	public void setDob(String dob) {
 		this.dob = dob;
 	}
 
